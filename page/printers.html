@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>base</title>
+    <link rel="icon" type="image/x-icon" href="../img/icon/favicon.png">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+  <!--------------------------------------------------------Навигация левая------------------------------------------------------------------------>
+  <div id="mySidenav" class="sidenav">
+    <p id="powered">
+      powered by @heavyname
+    </p>
+    <p id="navigation_title">
+      Kaspersky
+    </p>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#kaspersky_11"> Kaspersky Endpoint Security – NO GUI</a>
+    <a href="#kaspersky_12"> Kaspersky Endpoint Security – GUI</a>
+    <a href="#kaspersky_13"> Агент Администрирования</a>
+    <a href="#commandkas"> Команды для взаимодействия с Kaspersky Endpoint Security</a>
+    <p id="navigation_title">
+      VIPNET CLIENT
+    </p>
+    <a href="#vipnetinstall">VIPNET CLIENT</a>
+    <a href="#vipnetdns">DNS 10.14.100.222, 10.17.101.222</a>
+    <p id="navigation_title">
+      КРИПТОПРОВАЙДЕР CRYPTOPRO CSP 4.0 [MATE]
+    </p>
+    <a href="#crypto">CryptoPro CSP</a>
+    <a href="#cades">Cades Plugin</a>
+    <a href="#installcer">Установка сертификатов</a>
+    <a href="#sigcer">Подписание файлов</a>
+  </div>
+    <!-------------------------------------------------------------Конец------------------------------------------------------------------------------>
+    <!--------------------------------------------------------Навигация правая------------------------------------------------------------------------>
+    <div id="mySidenavRight" class="sidenavRight">
+      <p id="navigation_titleRight">
+        База знаний
+      </p>
+      <a href="javascript:void(0)" class="closebtnRight" onclick="closeNavRight()">×</a>
+      <a href="../index.html" class="baselink"> Инсталяция СКЗИ, СЗИ</a>
+      <a href="./page/printers.html" class="baselink"> Принтеры</a>
+    </div>
+    <!-------------------------------------------------------------Конец----------------------------------------------------------------------------->
+    <!-- Навигация страницы ((Левые кнопки)) -->
+    <div id="nav_div">
+      <label onclick="openNav()">
+        <div class="btn-menu" title="Открыть меню навигации">
+          <i></i>
+        </div>
+      </label>
+    </div>
+    <div id="nav_div">
+      <label onclick="openNav()">
+        <div class="btn-menu" title="Открыть меню навигации">
+          <i></i>
+        </div>
+      </label>
+    </div>
+  <!------------------------------------------------------>
+    <!-- Навигация страницы ((Правые кнопки)) -->
+    <div id="nav_divRight">
+      <label onclick="openNavRight()">
+        <div class="btn-menuRight" title="Открыть меню навигации">
+          <i></i>
+        </div>
+      </label>
+    </div>
+    <div id="nav_divRight">
+      <label onclick="openNavRight()">
+        <div class="btn-menuRight" title="Открыть меню навигации">
+          <i></i>
+        </div>
+      </label>
+    </div>
+  <!------------------------------------------------------>
+  <!--------------------------------------------------------Начало страницы------------------------------------------------------------------------>
+  <div class="background">   
+    <div class="content">
+      <h1>Здесь что-то будет, но точно не сейчас.</h1>
+    </div>
+    <!--------------------------------------------------------Конец Страницы------------------------------------------------------------------------>
+    <!-- Preload -->
+    <div class="preloader"> 
+        <svg viewBox="0 0 24 24" class="preloader__image" role="img">
+          <path d="M 22.49772,12.000001 A 10.49772,10.497721 0 0 1 12,22.497722 10.49772,10.497721 0 0 1 1.5022797,12.000001 10.49772,10.497721 0 0 1 12,1.5022797 10.49772,10.497721 0 0 1 22.49772,12.000001 Z" fill="none" stroke-linecap="round"></path>
+        </svg>
+        <div class="loadpreloader">
+          <p>
+            Загрузка страницы...
+          </p>
+        </div>
+    </div>
+    <!-- end preload -->
+    <!-- Кнопка показать\скрыть изображение -->
+    <a id="hide" title="Убрать все изображения" onclick="hideImageButton()"></a>
+    <a id="show" title="Открыть все изображения" onclick="showImageButton()"></a>
+    <script src='../lib/clipboard.min.js'></script>
+    <script src='../lib/jquery.min.js'></script>
+    <script src="../lib/script/script.js"></script>
+</body>
+</html>
