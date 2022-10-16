@@ -1,56 +1,32 @@
 @import url('../font/roboto.css');
 @import url('../font/roboto2.css');
+
 *{
   margin:0px;
+  scrollbar-width: auto;
+  scrollbar-color: #ffa200 #111;
 }
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #111;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ffa200;
+  border-radius: 0px;
+  border: 0px groove #111;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     max-width: 1400px;
     margin: auto;
     background: #d96908;
-    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-    height: 100vh; */
 }
-
-
-
-/* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    scrollbar-color: #ffa200 #111;
-  }
-
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 5px;
-  }
-
-  *::-webkit-scrollbar-track {
-    background: #111;
-  }
-
-  *::-webkit-scrollbar-thumb {
-    background-color: #ffa200;
-    border-radius: 0px;
-    border: 0px groove #111;
-  }
-
-/* @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-} */
-
-/* картинка на странице */
 
 .image__wrapper {
     text-align: center;
@@ -63,7 +39,6 @@ body{
   padding: 27px;
   background-color: white;
 }
-/* Оформление кнопок */
 
 .div-align {
     justify-content: center;
@@ -94,7 +69,6 @@ button.js-copy-btn {
     cursor: pointer;
 }
 
-/* Навигация */
 p#powered {
     color: #4c4c4c2b;
     display: flex;
@@ -150,7 +124,6 @@ p#navigation_title {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-/* Навигация правая */
 
 .sidenavRight {
   height: 100%;
@@ -201,8 +174,6 @@ a.baselink {
 .sidenavRight {padding: 40px 0px 0px 10px;}
 }
 
-
-/* Кнопка */
 .btn-menu {
     position: fixed;
     width: 40px;
@@ -247,13 +218,15 @@ a.baselink {
     transition-property: transform, -webkit-transform;
     background-color: #000000;
 }
+
 .btn-menu i:before {
   top: -10px;
 }
+
 .btn-menu i:after {
   bottom: -6px;
 }
-/* Кнопка правая */
+
 .btn-menuRight {
   position: fixed;
   width: 40px;
@@ -298,22 +271,25 @@ a.baselink {
   transition-property: transform, -webkit-transform;
   background-color: #000000;
 }
+
 .btn-menuRight i:before {
   top: -10px;
 }
+
 .btn-menuRight i:after {
   bottom: -6px;
 }
-/* Контент */
 
 .content,.title_div,.description_div{
   margin: 0px 200px 15px 200px;
   font-size: 18px;
 }
+
 .content{
   text-align: center;
   margin: 20px 200px 50px 200px;
 }
+
 div#nav_div {
     border-radius: 1000px;
     padding: 26px;
@@ -323,6 +299,7 @@ div#nav_div {
     left: 24px;
     z-index: -999;
 }
+
 div#nav_divRight {
   border-radius: 1000px;
   padding: 26px;
@@ -357,6 +334,7 @@ div#nav_divRight {
   font-size: 13px;
   justify-content: center;
 }
+
 #show{
   background-size: 42px;
   background-position: center;
@@ -382,7 +360,6 @@ div#nav_divRight {
   justify-content: center;
 }
 
-
 .preloader {
   position: fixed;
   display: flex;
@@ -398,6 +375,7 @@ div#nav_divRight {
   align-items: center;
   flex-direction: column;
 }
+
 .preloader__image {
   border-radius: 29px;
   background-color: #ffffff;
@@ -409,15 +387,18 @@ div#nav_divRight {
   box-shadow: #0000006e 0 0 20px 0px;
   animation: preloader-rotate 3s infinite cubic-bezier(0, 0, 0.46, 0.46);
 }
+
 @keyframes preloader-rotate {
   100% {
     transform: rotate(360deg);
   }
 }
+
 .loaded_hiding .preloader {
   transition: 0.3s opacity;
   opacity: 0;
 }
+
 .loaded .preloader {
   display: none;
 }
