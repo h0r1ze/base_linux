@@ -1,7 +1,7 @@
 @import url('../font/roboto.css');
 @import url('../font/roboto2.css');
 
-*{
+/* *{
   margin:0px;
   scrollbar-width: auto;
   scrollbar-color: #ffa200 #111;
@@ -20,7 +20,7 @@
   border-radius: 0px;
   border: 0px groove #111;
 }
-
+*/ 
 body{
     font-family: 'Roboto', sans-serif;
     max-width: 1400px;
