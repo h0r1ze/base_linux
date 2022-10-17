@@ -15,7 +15,7 @@
   background: #111;
 }
 
-*::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {.sidenavRight
   background-color: #ffa200;
   border-radius: 0px;
   border: 0px groove #111;
@@ -129,7 +129,7 @@ p#navigation_title {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 9999999;
+  z-index: 9999;
   top: 0;
   right: 0;
   background-color: #111;
@@ -328,7 +328,7 @@ div#nav_divRight {
   margin-top: 10px;
   top: 65px;
   left: 21px;
-  z-index: 99999;
+  z-index: -999;
   align-items: baseline;
   align-content: center;
   font-size: 13px;
