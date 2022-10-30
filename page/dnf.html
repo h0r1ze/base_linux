@@ -17,14 +17,14 @@
       Название
     </p>
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-
   </div>
     <div id="mySidenavRight" class="sidenavRight">
       <p id="navigation_titleRight">
         База знаний
       </p>
       <a href="javascript:void(0)" class="closebtnRight" onclick="closeNavRight()">×</a>
-      <a href="#" class="baselink">- Преднастройка dnf.conf (для прокси)</a>
+      <a href="../distr/" class="baselink">- Дистрибутивы</a>
+      <a href="#" class="baselink">- Обязательная преднастройка dnf.conf (прокси)</a>
       <a href="../index.html" class="baselink">- Kaspersky, VipNet Client, CryptoPro CSP 4.0</a>
       <a href="printers.html" class="baselink">- Принтеры</a>
     </div>
@@ -71,17 +71,25 @@
     </div>
     <div class="description_div" id="kaspersky_11">
         <p class="description_p">
-          Прописываем в нижней части следующие строки: 
+          Прописываем в <b style="color:red">НИЖНЕЙ</b> части следующие строки: 
         </p>
     </div>
     <div class="div-align">
         <p class="js-copy-text">
-            proxy=http://xxx.xxx.xx.x:8080
-            <br>proxy_username=domain\user
-            <br>proxy_password=password
+            proxy=10.82.107.100:3128
+            <br>proxy_username=
+            <br>proxy_password=
         </p>
         <button class="js-copy-btn" title="Копировать">Copy</button>
     </div>
+    <div class="description_div" id="kaspersky_11">
+        <p class="description_p">
+          Пример того как должно получиться: 
+        </p>
+    </div>
+    <div class="image__wrapper" id="detail">
+        <img src="../img/dnfconf.png">
+    </div>  
     <div class="preloader"> 
         <svg viewBox="0 0 24 24" class="preloader__image" role="img">
           <path d="M 22.49772,12.000001 A 10.49772,10.497721 0 0 1 12,22.497722 10.49772,10.497721 0 0 1 1.5022797,12.000001 10.49772,10.497721 0 0 1 12,1.5022797 10.49772,10.497721 0 0 1 22.49772,12.000001 Z" fill="none" stroke-linecap="round"></path>

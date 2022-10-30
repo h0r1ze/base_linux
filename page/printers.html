@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>base</title>
     <link rel="icon" type="image/x-icon" href="../img/icon/favicon.png">
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/style_page.css">
 </head>
 <body>
   <div id="mySidenav" class="sidenav">
@@ -14,8 +14,19 @@
       powered by @heavyname
     </p>
     <p id="navigation_title">
-      Название
+      Настройка принтеров и сканеров
     </p>
+    <a href="#canon_print">- Canon Печать</a>
+    <a href="#canon_scan">- Canon Сканирование</a>
+    <br>
+    <a href="#samsung_print">- Samsung Печать</a>
+    <a href="#samsung_scan">- Samsung Сканирование</a>
+    <br>
+    <a href="#kyocera_print">- Kyocera Печать</a>
+    <a href="#kyocera_scan">- Kyocera Сканирование</a>
+    <br>
+    <a href="#hp_print">- HP Печать</a>
+    <a href="#hp_scan">- HP Сканирование</a>
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 
   </div>
@@ -24,7 +35,8 @@
         База знаний
       </p>
       <a href="javascript:void(0)" class="closebtnRight" onclick="closeNavRight()">×</a>
-      <a href="dnf.html" class="baselink">- Преднастройка dnf.conf (для прокси)</a>
+      <a href="../distr/" class="baselink">- Дистрибутивы</a>
+      <a href="dnf.html" class="baselink">- Обязательная преднастройка dnf.conf (прокси)</a>
       <a href="../index.html" class="baselink">- Kaspersky, VipNet Client, CryptoPro CSP 4.0</a>
       <a href="#" class="baselink">- Принтеры</a>
     </div>
@@ -58,22 +70,46 @@
     </div>
   <div class="background">   
     <div class="content">
-      <h1>Страница пустая</h1>
+      <h1 id="canon_print">Canon</h1>
     </div>
-    <div class="preloader"> 
-        <svg viewBox="0 0 24 24" class="preloader__image" role="img">
-          <path d="M 22.49772,12.000001 A 10.49772,10.497721 0 0 1 12,22.497722 10.49772,10.497721 0 0 1 1.5022797,12.000001 10.49772,10.497721 0 0 1 12,1.5022797 10.49772,10.497721 0 0 1 22.49772,12.000001 Z" fill="none" stroke-linecap="round"></path>
-        </svg>
-        <div class="loadpreloader">
-          <p>
-            Загрузка страницы...
-          </p>
-        </div>
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/canonlib.png">
+    </div> 
+    <div class="content">
+      <h1 id="samsung_print">Samsung</h1>
     </div>
-    <a id="hide" title="Убрать все изображения" onclick="hideImageButton()"></a>
-    <a id="show" title="Открыть все изображения" onclick="showImageButton()"></a>
-    <script src='../lib/clipboard.min.js'></script>
-    <script src='../lib/jquery.min.js'></script>
-    <script src="../lib/script/script.js"></script>
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/samsungofficialpage.png">
+    </div>
+    <div class="content">
+      <h1 id="kyocera_print">Kyocera</h1>
+    </div>
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/kyoceralib.png">
+    </div>
+    <div class="content">
+      <h1 id="hp_print">HP</h1>
+    </div>
+    <div class="div-align">
+      <p class="js-copy-text">dnf install hplip-gui python3-distro -y</p>
+      <button class="js-copy-btn" title="Копировать">Copy</button>
+    </div> 
+  </div>  
+</div>  
+  <div class="preloader"> 
+      <svg viewBox="0 0 24 24" class="preloader__image" role="img">
+        <path d="M 22.49772,12.000001 A 10.49772,10.497721 0 0 1 12,22.497722 10.49772,10.497721 0 0 1 1.5022797,12.000001 10.49772,10.497721 0 0 1 12,1.5022797 10.49772,10.497721 0 0 1 22.49772,12.000001 Z" fill="none" stroke-linecap="round"></path>
+      </svg>
+      <div class="loadpreloader">
+        <p>
+          Загрузка страницы...
+        </p>
+      </div>
+  </div>
+  <a id="hide" title="Убрать все изображения" onclick="hideImageButton()"></a>
+  <a id="show" title="Открыть все изображения" onclick="showImageButton()"></a>
+  <script src='../lib/clipboard.min.js'></script>
+  <script src='../lib/jquery.min.js'></script>
+  <script src="../lib/script/script.js"></script>
 </body>
 </html>
