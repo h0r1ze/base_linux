@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>base</title>
     <link rel="icon" type="image/x-icon" href="../img/icon/favicon.png">
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/style_dnf.css">
 </head>
 <body>
   <div id="mySidenav" class="sidenav">
@@ -24,9 +24,9 @@
         База знаний
       </p>
       <a href="javascript:void(0)" class="closebtnRight" onclick="closeNavRight()">×</a>
-      <a href="dnf.html" class="baselink">- Преднастройка dnf.conf (для прокси)</a>
+      <a href="#" class="baselink">- Преднастройка dnf.conf (для прокси)</a>
       <a href="../index.html" class="baselink">- Kaspersky, VipNet Client, CryptoPro CSP 4.0</a>
-      <a href="#" class="baselink">- Принтеры</a>
+      <a href="printers.html" class="baselink">- Принтеры</a>
     </div>
     <div id="nav_div">
       <label onclick="openNav()">
@@ -58,7 +58,29 @@
     </div>
   <div class="background">   
     <div class="content">
-      <h1>Страница пустая</h1>
+      <h1>Настройка dnf.conf для прокси-сервера</h1>
+    </div>
+    <div class="description_div" id="kaspersky_11">
+        <p class="description_p">
+          Для настройки dnf.conf необходимо отредактировать от root: 
+        </p>
+    </div>
+    <div class="div-align">
+        <p class="js-copy-text">nano /etc/dnf/dnf.conf</p>
+        <button class="js-copy-btn" title="Копировать">Copy</button>
+    </div>
+    <div class="description_div" id="kaspersky_11">
+        <p class="description_p">
+          Прописываем в нижней части следующие строки: 
+        </p>
+    </div>
+    <div class="div-align">
+        <p class="js-copy-text">
+            proxy=http://xxx.xxx.xx.x:8080
+            <br>proxy_username=domain\user
+            <br>proxy_password=password
+        </p>
+        <button class="js-copy-btn" title="Копировать">Copy</button>
     </div>
     <div class="preloader"> 
         <svg viewBox="0 0 24 24" class="preloader__image" role="img">
