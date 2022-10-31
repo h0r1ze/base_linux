@@ -10,37 +10,24 @@
 </head>
 <body>
   <div id="mySidenav" class="sidenav">
-    <p id="powered">
-      powered by @heavyname
-    </p>
-    <p id="navigation_title">
-      Прочее
-    </p>
-    <a href="#">- Создание ярлыка с автоматическим выбором сканера</a>
-    <p id="navigation_title">
-      Драйвера печати, сканирования
-    </p>
-    <p id="navigation_title">
-      Canon
-    </p>
+    <p id="powered">powered by @heavyname</p>
+    <p id="navigation_title">Прочее</p>
+    <a href="#">- Создание ярлыка запуска(сеть)</a>
+    <br>
+    <p id="navigation_title">Печать/сканирование</p>
+    <p id="navigation_title">Canon</p>
     <a href="#canon_print">Установка драйверов</a>
     <br>
     <a href="#canon_I-SENSYS_mf426dw">Настройка МФУ I-SENSYS mf426dw</a>
-    <p id="navigation_title">
-      Samsung
-    </p>
+    <p id="navigation_title">Samsung</p>
     <a href="#samsung_print">Установка драйверов</a>
     <br>
     <!-- <a href="#samsung_scan">- Samsung Сканирование</a> -->
-    <p id="navigation_title">
-      Kyocera
-    </p>
+    <p id="navigation_title">Kyocera</p>
     <a href="#kyocera_print">Установка драйверов</a>
     <br>
     <!-- <a href="#kyocera_scan">- Kyocera Сканирование</a> -->
-    <p id="navigation_title">
-      HP
-    </p>
+    <p id="navigation_title">HP</p>
     <a href="#hp_print">Установка драйверов</a>
     <br>
     <!-- <a href="#hp_scan">- HP Сканирование</a> -->
@@ -48,14 +35,12 @@
 
   </div>
     <div id="mySidenavRight" class="sidenavRight">
-      <p id="navigation_titleRight">
-        База знаний
-      </p>
+      <p id="navigation_titleRight">База знаний</p>
       <a href="javascript:void(0)" class="closebtnRight" onclick="closeNavRight()">×</a>
       <a href="../distr/" class="baselink">- Дистрибутивы</a>
       <a href="dnf.html" class="baselink">- Обязательная преднастройка dnf.conf (прокси)</a>
       <a href="../index.html" class="baselink">- Kaspersky, VipNet Client, CryptoPro CSP 4.0</a>
-      <a href="#" class="baselink">- Принтеры</a>
+      <a href="#" class="baselink">- Принтеры/Сканеры</a>
     </div>
     <div id="nav_div">
       <label onclick="openNav()">
@@ -86,6 +71,80 @@
       </label>
     </div>
   <div class="background">   
+    <div class="content">
+      <h1 id="canon_print">Прочее</h1>
+    </div>
+    <div class="content" id="commandkas">
+      <h2>Создание ярлыка запуска(сеть)</h2>
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        Для создания ярлыка(кнопки запуска) необходимо нажать ПКМ по рабочему столу
+      </p>
+    </div>
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/createbuttonscan.png">
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        Вбиваем произвольное имя ярлыка, и команду: simple-scan " "
+      </p>
+    </div>
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/createbutton.png">
+    </div> 
+    <div class="description_div">
+      <p class="description_p">
+        Теперь необходимо найти данный сканер в нашей сети. 
+    </div>
+    <div class="div-align">
+      <p class="js-copy-text">scanimage -L</p>
+      <button class="js-copy-btn" title="Копировать">Copy</button>
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        <br> В данном случае один принтер определяется сразу 2 видами драйверов <b>Apple</b> - AirScan, eSCL и <b>HP</b> - hpaio
+        <br> Для сети необходимо выбрать c ip адресом и тот что быстрее.(не всегда фирменный сканер будет быстрее нежели аналоговый).
+        <br>
+        <br> Необходимо скопировать всю строчку в одинарных ковычках: <b> 'Найденный сканер в сети' </b>
+      </p>
+    </div>
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/scanimageL.png">
+    </div> 
+    <div class="description_div">
+      <p class="description_p">
+        Пример как должно получиться:
+    </div>
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/settingsbutton.png">
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        После запуска ярлыка у нас будет автоматически выбран сканер:
+    </div>
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/test_scanning.png">
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        Если стоит МФУ и пользователю необходимо сканировать из автоподатчика, то необходимо выбрать его в параметрах:
+        <br>
+    </div>
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/Inkedsettingscan_one.jpg">
+        <p style="margin: 5px 200px 15px 200px;text-align: initial;text-decoration: underline;color: red;font-weight: 500;">
+          В ИНОМ СЛУЧАЕ ВЫЙДЕТ ОШИБКА ЧТО НЕ УДАЛОСЬ СВЯЗАТЬСЯ С ПРИНТЕРОМ
+        </p>
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        Также необходимо убедиться что параметры страницы заданы верно, иначе будет сканировать в нестандартном формате.
+        <br>
+    </div>
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/settingsscan.png">
+    </div>
     <div class="content">
       <h1 id="canon_print">Canon</h1>
     </div>
