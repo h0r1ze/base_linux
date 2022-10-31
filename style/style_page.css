@@ -28,7 +28,7 @@ body{
     background: #d96908;
 }
 
-img{
+.img_big{
   width: 65%;
 }
 
@@ -100,6 +100,7 @@ p#powered {
   font-size: 20px;
   color: #818181;
   transition: 0.3s;
+  justify-content: center;
 }
 
 .sidenav a:hover {

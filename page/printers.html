@@ -14,19 +14,36 @@
       powered by @heavyname
     </p>
     <p id="navigation_title">
-      Настройка принтеров и сканеров
+      Прочее
     </p>
-    <a href="#canon_print">- Canon Печать</a>
-    <a href="#canon_scan">- Canon Сканирование</a>
+    <a href="#">- Создание ярлыка с автоматическим выбором сканера</a>
+    <p id="navigation_title">
+      Драйвера печати, сканирования
+    </p>
+    <p id="navigation_title">
+      Canon
+    </p>
+    <a href="#canon_print">Установка драйверов</a>
     <br>
-    <a href="#samsung_print">- Samsung Печать</a>
-    <a href="#samsung_scan">- Samsung Сканирование</a>
+    <a href="#canon_I-SENSYS_mf426dw">Настройка МФУ I-SENSYS mf426dw</a>
+    <p id="navigation_title">
+      Samsung
+    </p>
+    <a href="#samsung_print">Установка драйверов</a>
     <br>
-    <a href="#kyocera_print">- Kyocera Печать</a>
-    <a href="#kyocera_scan">- Kyocera Сканирование</a>
+    <!-- <a href="#samsung_scan">- Samsung Сканирование</a> -->
+    <p id="navigation_title">
+      Kyocera
+    </p>
+    <a href="#kyocera_print">Установка драйверов</a>
     <br>
-    <a href="#hp_print">- HP Печать</a>
-    <a href="#hp_scan">- HP Сканирование</a>
+    <!-- <a href="#kyocera_scan">- Kyocera Сканирование</a> -->
+    <p id="navigation_title">
+      HP
+    </p>
+    <a href="#hp_print">Установка драйверов</a>
+    <br>
+    <!-- <a href="#hp_scan">- HP Сканирование</a> -->
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 
   </div>
@@ -72,20 +89,70 @@
     <div class="content">
       <h1 id="canon_print">Canon</h1>
     </div>
+    <div class="description_div">
+      <p class="description_p">
+        Устанавливаем <a target="_blank" href="https://asia.canon/en/support/0100924010">linux-UFRII Driver для Linux</a>
+      </p>
+    </div>
     <div class="image__wrapper" id="detail">
-      <img src="../img/printers_page/canonlib.png">
+      <img class="img_big" src="../img/printers_page/canonufr.png">
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        Распаковываем в любое место, открываем терминал в папке драйвера и запускаем bash скрипт.
+      </p>
+    </div> 
+    <div class="div-align">
+      <p class="js-copy-text">./install.sh</p>
+      <button class="js-copy-btn" title="Копировать">Copy</button>
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        Если выдаст ошибку, то необходимо выдать права для install.sh
+      </p>
+    </div> 
+    <div class="div-align">
+      <p class="js-copy-text">chmod +x install.sh</p>
+      <button class="js-copy-btn" title="Копировать">Copy</button>
+    </div>
+    <div class="content" id="commandkas">
+      <h2 id="canon_I-SENSYS_mf426dw">Настройка МФУ I-SENSYS mf426dw (Сеть)</h2>
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        Для установки принтера после запуска скрипта необходимо выбрать его в предлагаемом каталоге.
+      </p>
+    </div>   
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/mf426dwcanonselect.png">
+    </div>
+    <br> 
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/mf426dwchoose.png">
+    </div> 
+    <br>
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/mf426dwlpd.png">
+    </div>     
+    <div class="description_div">
+      <p class="description_p">
+        Если не получается установить драйвер печати/сканера устанавливаем <a target="_blank" href="https://asia.canon/en/support/0100459601">Capt Driver для Linux</a>
+      </p>
+    </div>
+    <div class="image__wrapper" id="detail">
+      <img class="img_big" src="../img/printers_page/canoncapt.png">
     </div> 
     <div class="content">
       <h1 id="samsung_print">Samsung</h1>
     </div>
     <div class="image__wrapper" id="detail">
-      <img src="../img/printers_page/samsungofficialpage.png">
+      <img class="img_big" src="../img/printers_page/samsungofficialpage.png">
     </div>
     <div class="content">
       <h1 id="kyocera_print">Kyocera</h1>
     </div>
     <div class="image__wrapper" id="detail">
-      <img src="../img/printers_page/kyoceralib.png">
+      <img class="img_big" src="../img/printers_page/kyoceralib.png">
     </div>
     <div class="content">
       <h1 id="hp_print">HP</h1>
