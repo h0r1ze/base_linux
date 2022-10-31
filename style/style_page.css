@@ -94,7 +94,6 @@ p#powered {
 }
 
 .sidenav a {
-  display: flex;
   padding: 4px 8px 4px 8px;
   text-decoration: none;
   font-size: 20px;
