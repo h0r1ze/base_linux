@@ -121,9 +121,66 @@
         <button class="js-copy-btn" title="Копировать">Copy</button>
       </div>
       <br>
-      <div class="image__wrapper">
-          <img src="./img/kes1.png">
-      </div>  
+      <div class="description_div">
+        <p class="description_p">
+          Указываем следующее:
+        </p>
+      </div>
+      <div class="div-align">
+        <pre class="js-copy-text-code">
+
+- [ru_RU.UTF-8]:<b style="color: #32d42f; font-size: 25px;"> ENTER</b>
+
+- Press ENTER to display the EULA and Privacy Policy:<b style="color: #32d42f; font-size: 25px;"> Y</b>
+
+- I confirm that I have fully read, understand, and accpet the terms and 
+conditions of this End User License Agreement [y/n]:<b style="color: #32d42f; font-size: 25px;"> Y</b>
+
+- I am aware and agree that my data will be handled and transmitted
+(including to third countries) as described in the Privacy Policy. I
+confirm that I have filly read and understand the Privacy Policy [y/n]:<b style="color: #32d42f; font-size: 25px;"> Y</b>
+
+<b><u>Configuring KSN</u></b>
+
+- I confirm That I have fully read, understand, and accept the terms add
+conditions of the Kaspersky Serucity Netowrk Statement (KSN Statement 
+is available here: '/opt/kaspersky/kesl/doc/ksn_license.ru') [y/n]:<b style="color: #32d42f; font-size: 25px;"> Y</b>
+
+<b><u>Granting the Adminstator role</u></b>
+
+- Only users withe the Administrator role have full access to Kaspersky
+Endpoint Security managment by command line and GUI.
+
+Specify user to grant the 'admin' role to (leave empty to skip): <b style="color: #32d42f; font-size: 25px;"> root</b>
+
+<b><u>Configuring the update source</u></b>
+
+- Specify the update source. Possible values: KLServers | SCServer | < url >:
+
+[KLServers]: <b style="color: #32d42f; font-size: 25px;"> KLServers</b>
+
+<b><u>Configuring proxy server setting to connect to the updates source</u></b>
+
+- If you use an HTTP proxy server to access the internet. please ENTER
+the address in one of the following formats:
+proxyIP: port to user:pass@proxyIP:port, or enter 'no' [n]:<b style="color: #32d42f; font-size: 25px;"> user:pass@proxyIP:port</b>
+
+- Updated databases are an essential part of your server protection.
+Please note that the application may be restarted during the update
+process.
+Do you want to download the latest databases now? [y]:<b style="color: #32d42f; font-size: 25px;"> Y</b>
+
+<b><u>Enabling automatic updates of the application databases</u></b>
+
+- Do you want to enable scheduled updates? [y]:<b style="color: #32d42f; font-size: 25px;"> Y</b>
+
+<b><u>Activate the application</u></b>
+
+- You must activate the application to use it.
+To activate the application now, enter the path to your key file or an
+activation code. Enter an empty string to add the built-in trial key:<b style="color: #32d42f; font-size: 25px;"> ENTER</b>
+        </pre>
+      </div>
       <br>
       <div class="description_div">
         <p class="description_p" id="kaspersky_12">
@@ -174,8 +231,26 @@
         <p class="js-copy-text">/opt/kaspersky/klnagent64/bin/klnagchk</p>
         <button class="js-copy-btn" title="Копировать">Copy</button>
       </div>  
+      <div class="div-align">
+        <pre class="js-copy-text-code">
+
+<b><u style="color: #32d42f; font-size: 19px;"># Пролистываем в самый конец и должны наблюдать следующую информацию о подключении:</u></b>
+
+Connecting to server...OK
+
+Connetcting to the Administation Agent...OK
+Administation agent is running
+Acquire Administation Agent statistics...OK
+    Administation Agent statistics:
+    Ping count: 2
+    Succ. pings: 2
+    Sync count: 1
+    Succ. syncs: 1
+    Last ping: 28.10.2022 04:56:34 GMT (28.10.2022 09:56:34)
+        </pre>
+      </div>      
       <div class="content" id="commandkas">
-        <h2>Команды для взаимодействия с Kaspersky Endpoint Security</h2>
+        <h2>(НЕОБЯЗАТЕЛЬНЫЕ) Команды для взаимодействия с Kaspersky Endpoint Security</h2>
       </div>
       <div class="description_div">
         <p class="description_p">
@@ -304,13 +379,29 @@
       <br>
       <div class="description_div">
           <p class="description_p">
-            Установка ключей:
+            Установка ключей
           </p>
+      </div>
+      <div class="description_div">
+        <p class="description_p">
+          Без интерфейса:
+        </p>
       </div>
       <div class="div-align">
           <p class="js-copy-text">vipnetclient installkeys <ПУТЬ></p>
           <button class="js-copy-btn" title="Копировать">Copy</button>
       </div>
+      <div class="description_div">
+        <p class="description_p">
+          С интерфейсом:
+        </p>
+      </div>
+      <div class="image__wrapper">
+        <img src="./img/vipnetchoosedesktop.png">
+      </div> 
+      <div class="image__wrapper">
+        <img src="./img/vipnetinstallkeys.png">
+      </div> 
       <br>
       <div class="content" id="crypto">
           <h1>КРИПТОПРОВАЙДЕР CRYPTOPRO CSP 4.0 [MATE]</h1>
@@ -357,7 +448,7 @@
           </p>
       </div>
       <div class="div-align">
-          <p class="js-copy-text">dnf install -y ifd-rutokens</p>
+          <p class="js-copy-text">dnf install -y ifd-rutokens -y</p>
           <button class="js-copy-btn" title="Копировать">Copy</button>
       </div>
       <br>
@@ -367,7 +458,7 @@
           </p>
       </div>
       <div class="div-align">
-          <p class="js-copy-text">dnf install cprocsp-rdr-jacarta*.rpm</p>
+          <p class="js-copy-text">dnf install cprocsp-rdr-jacarta*.rpm -y</p>
           <button class="js-copy-btn" title="Копировать">Copy</button>
       </div>
       <br>
@@ -377,7 +468,7 @@
           </p>
       </div>
       <div class="div-align">
-          <p class="js-copy-text">dnf install token-manager</p>
+          <p class="js-copy-text">dnf install token-manager -y</p>
           <button class="js-copy-btn" title="Копировать">Copy</button>
       </div>
       <br>
@@ -387,7 +478,7 @@
           </p>
       </div>
       <div class="div-align">
-          <p class="js-copy-text">dnf install gostcryptogui caja-gostcryptogui</p>
+          <p class="js-copy-text">dnf install gostcryptogui caja-gostcryptogui -y</p>
           <button class="js-copy-btn" title="Копировать">Copy</button>
       </div>
       <br>
@@ -413,7 +504,7 @@
         </p>
       </div>
       <div class="div-align">
-          <p class="js-copy-text">dnf install ./cprocsp-pki*rpm</p>
+          <p class="js-copy-text">dnf install ./cprocsp-pki*rpm -y</p>
           <button class="js-copy-btn" title="Копировать">Copy</button>
       </div>
       <br>
