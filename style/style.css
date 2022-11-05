@@ -29,6 +29,10 @@ body{
     z-index: -99;
 }
 
+.img_big{
+  width: 65%;
+}
+
 .image__wrapper {
     text-align: center;
 }
@@ -53,6 +57,17 @@ p.js-copy-text{
   border: 1px solid #0000003b;
   border-radius: 4px;
   height: 40px;
+  width: 526px;
+  margin-bottom: 4px;
+  box-shadow: 0 0 2px 0px #0000004f;
+  align-items: center;
+}
+p.js-copy-text-large{
+  padding: 7px 7px 7px 14px;
+  display: flex;
+  border: 1px solid #0000003b;
+  border-radius: 4px;
+  height: 60px;
   width: 526px;
   margin-bottom: 4px;
   box-shadow: 0 0 2px 0px #0000004f;
