@@ -119,10 +119,11 @@ p#powered {
     padding-top: 16px;
 }
 
+
 .sidenav a {
   padding: 4px 8px 4px 8px;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 18px;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -138,6 +139,15 @@ p#powered {
     right: 15px;
     font-size: 36px;
     margin-left: 50px;
+}
+p#navigation_title-printers{
+  color: white;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  font-size: 21px;
+  text-align: center;
 }
 p#navigation_title {
     color: white;
