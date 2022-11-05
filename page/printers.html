@@ -239,7 +239,7 @@
       </p>
     </div>
     <div class="image__wrapper" id="detail">
-      <img class="img_big" src="../img/printers_page/taskalfafolder.png">
+      <img src="../img/printers_page/taskalfafolder.png">
     </div>  
     <div class="description_div">
       <p class="description_p">
@@ -252,7 +252,7 @@
     </div> 
     <br>
     <div class="image__wrapper" id="detail">
-      <img class="img_big" src="../img/printers_page/taskalfadriverfedora.png">
+      <img src="../img/printers_page/taskalfadriverfedora.png">
     </div> 
     <div class="description_div">
       <p class="description_p">
@@ -269,15 +269,183 @@
       </p>
     </div> 
     <div class="image__wrapper" id="detail">
-      <img class="img_big" src="../img/printers_page/taskalfappd.png">
+      <img src="../img/printers_page/taskalfappd.png">
     </div> 
     <div class="content">
       <h1 id="hp_print">HP</h1>
     </div>
+    <div class="description_div">
+      <p class="description_p">
+        До установки плагина:
+      </p>
+    </div> 
+    <div class="image__wrapper" id="detail">
+      <img class="img_big" src="../img/printers_page/hp/scanimage_without_hp.png">
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        После установки плагина:
+      </p>
+    </div> 
+    <div class="image__wrapper" id="detail">
+      <img class="img_big" src="../img/printers_page/hp/scanimage_after_installation_hp_plugin.png">
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        Для работы МФУ/принтера необходимо установить библиотеку и плагин
+        <br><br>Установка библиотеки
+      </p>
+    </div> 
     <div class="div-align">
       <p class="js-copy-text">dnf install hplip-gui python3-distro -y</p>
       <button class="js-copy-btn" title="Копировать">Copy</button>
+    </div>
+    <br>
+    <div class="description_div">
+      <p class="description_p">
+        <b style="font-size: 25px;"><u>Установка плагина для сканирования</u></b>
+        <br><br>Для начала перейдем к скачиванию самого плагина на официальный сайт hp
+      </p>
     </div> 
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/hp/hp_plugin_search.png">
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        Для корректной работы необходимо скачать плагин версии: <b>hplip-3.21.2-plugin.run</b>
+      </p>
+    </div> 
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/hp/download_hp_plugin.png">
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        Открывается файл в браузере, теперь его необходимо правильно сохранить
+      </p>
+    </div> 
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/hp/save_plugin_hp.png">
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        Необходимо удалить на конце формат .txt иначе файл не будет отображаться при установки самого плагина.
+        <br><br> Должно получиться: <b>hplip-3.21.2-plugin.run</b>
+      </p>
+    </div> 
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/hp/change_txt_to_run.png">
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        Теперь необходимо запустить терминал из под пользователя, либо в существующем терминале выходим из под su:
+      </p>
+    </div> 
+    <div class="div-align">
+      <p class="js-copy-text">exit</p>
+      <button class="js-copy-btn" title="Копировать">Copy</button>
+    </div>
+    <br>
+    <div class="div-align">
+      <p class="js-copy-text">/usr/bin/hp-plugin</p>
+      <button class="js-copy-btn" title="Копировать">Copy</button>
+    </div>
+    <br>
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/hp/exit_to_installation_hp_plugin.png">
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        Если плагин уже установлен, его можно переустановить:
+      </p>
+    </div> 
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/hp/update_hp_plugin.png">
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        Ставим на второй чекбокс и выбираем файл:
+      </p>
+    </div> 
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/hp/check_box_two_choose.png">
+    </div>
+    <br>
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/hp/hp_choose_hp_run.png">
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        При повторной переустановке может возникнуть данная ошибка:
+      </p>
+    </div> 
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/hp/failed_to_dowload.png">
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        Вводим пароль от учетной записи или пароль от <b><u>root</u></b> в зависимости от того что будет написано в Username:
+      </p>
+    </div> 
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/hp/access_user_pass.png">
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        После этого зависнет приложение и в терминале будет проходить процесс инсталяции:
+      </p>
+    </div> 
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/hp/base.gif" style="margin: 0px 200px 15px 200px; display: flex;">
+    </div>
+    <br>
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/hp/installation_success_hp.png">
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        <b style="font-size: 25px;"><u>Установка принтера</u></b>
+        <br><br>Заходим в настройки принтера HP
+      </p>
+    </div> 
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/hp/hp_manager_printers_installed.png">
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        Выбираем метод подключения к принтеру, в моем случае принтер размещен в локальной сети
+      </p>
+    </div> 
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/hp/hp_choose_printer.png">
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        Стандартно ищется по SLP, поэтому чаще всего возникает ошибка о том, что не удалось найти принер
+      </p>
+    </div> 
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/hp/hp_error_printer.png">
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        Для корректного поиска необходимо выбрать mDNS/Bonjour если поддерживается на устройстве(можно включить в настройках самого принтера) или же просто найти по ip-адресу.
+      </p>
+    </div> 
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/hp/hp_discovery_printer.png">
+    </div>
+    <br>
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/hp/hp_ip_printer.png">
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        Остается только выбрать принтер.
+      </p>
+    </div>
+    <div class="image__wrapper" id="detail">
+      <img src="../img/printers_page/hp/hp_choose.png">
+    </div>
   </div>  
 </div>  
   <div class="preloader"> 
