@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>base</title>
+    <link rel="icon" type="image/x-icon" href="../img/icon/favicon.png">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+  <div id="mySidenav" class="sidenav">
+    <p id="powered">
+      powered by @heavyname
+    </p>
+    <p id="navigation_title">
+      Название
+    </p>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  </div>
+    <div id="mySidenavRight" class="sidenavRight">
+      <p id="navigation_titleRight">
+        База знаний
+      </p>
+      <a href="javascript:void(0)" class="closebtnRight" onclick="closeNavRight()">×</a>
+      <a href="../distr/" class="baselink">- Дистрибутивы</a>
+      <a href="#" class="baselink">- Преднастройка dnf.conf</a>
+      <a href="../index.html" class="baselink">- Kaspersky | VipNet Client | CryptoPro CSP 4.0 | CryptoPro CSP 5.0</a>
+      <a href="printers.html" class="baselink">- Принтеры/Сканеры</a>
+    </div>
+    <div id="nav_div">
+      <label onclick="openNav()">
+        <div class="btn-menu" title="Открыть меню навигации">
+          <i></i>
+        </div>
+      </label>
+    </div>
+    <div id="nav_div">
+      <label onclick="openNav()">
+        <div class="btn-menu" title="Открыть меню навигации">
+          <i></i>
+        </div>
+      </label>
+    </div>
+    <div id="nav_divRight">
+      <label onclick="openNavRight()">
+        <div class="btn-menuRight" title="Открыть меню навигации">
+          <i></i>
+        </div>
+      </label>
+    </div>
+    <div id="nav_divRight">
+      <label onclick="openNavRight()">
+        <div class="btn-menuRight" title="Открыть меню навигации">
+          <i></i>
+        </div>
+      </label>
+    </div>
+  <div class="background">   
+    <div class="content">
+      <h1>Перенос почты с Outlook в Thunderbird</h1>
+    </div>
+    <div class="description_div">
+        <p class="description_p">
+          Для переноса необходимо установить Thunderbird на машину где установлен Outlook выше 2010 версии. Если на машине стоит MS Office 2010 года, можно удалить 2010 и установить 2016 года MS Office, либо скопировать файл данных на ПК и начать перенос уже на рабочей версии MS Office 2016
+        </p>
+    </div> 
+    <div class="content" id="crypto">
+      <h2>Файл данных Outlook</h2>
+    </div>
+    <div class="image__wrapper" id="detail">
+      <img src="../img/thunderbird/найти_бд_var1.png">
+    </div> 
+    <div class="image__wrapper" id="detail">
+      <img class="img_big" src="../img/thunderbird/найти_бд_var1.jpg">
+    </div> 
+    <br>
+    <div class="image__wrapper" id="detail">
+      <img src="../img/thunderbird/нашли_бд.jpg">
+    </div> 
+    <div class="content">
+      <h1>Перенос данных в Thunderbird если имеется скопированный файл данных с другого ПК.</h1>
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        Авторизуемся в Outlook -> Заходим по тому же пути где сгенерировался новый файл данных -> Переносим старый файл данных пользователя -> добавляем к нашим файлам данных как показано на скриншоте ниже
+      </p>
+    </div>
+    <div class="image__wrapper" id="detail">
+      <img src="../img/thunderbird/add_file_date.png">
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        Переходим в Thunderbird и начинаем импорт из Outlook
+      </p>
+    </div>
+    <div class="image__wrapper" id="detail">
+      <img src="../img/thunderbird/import_outlook (3).png">
+    </div>
+    <br>
+    <div class="image__wrapper" id="detail">
+      <img src="../img/thunderbird/import_outlook (5).png">
+    </div>
+    <br>
+    <div class="image__wrapper" id="detail">
+      <img src="../img/thunderbird/import_outlook (2).png">
+    </div>
+    <br>
+    <div class="image__wrapper" id="detail">
+      <img src="../img/thunderbird/import_outlook_progress.png">
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        При переносе может казаться что процесс завис, но как правило если данных слишком много, то перенос займет продолжительное время. Для того чтобы посмотреть сколько данных перенеслось необходимо перейти по следующему пути:
+        <br>
+        <br>
+        <b>C:\Users\<ИМЯ ПОЛЬЗОВАТЕЛЯ>\AppData\Roaming\Thunderbird\Profiles\<СГЕНЕРИРОВАННЫЕ-СИМВОЛЫ>.default-release\Mail\Local Folders\Импорт из «Outlook».sbd</b>
+      </p>
+    </div>
+    <br>
+    <div class="image__wrapper" id="detail">
+      <img class="img_big" src="../img/thunderbird/import_outlook_infomass.jpg">
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        После того как все данные перенеслись можно скопировать все что находится в папке и перенести в <b style="color: red;">RedOS</b>
+      </p>
+    </div>
+    <div class="image__wrapper" id="detail">
+      <img class="img_big" src="../img/thunderbird/perenos_var2.jpg">
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        Путь к корневым файлам Thunderbird можно найти в параметрах учетной записи
+      </p>
+    </div>
+    <div class="image__wrapper" id="detail">
+      <img class="img_big" src="../img/thunderbird/(REDOS) local folder.png">
+    </div>
+    <div class="description_div">
+      <p class="description_p">
+        Необходимо в корневой папке создать папку АРХИВ.sdb и перенести все файлы которые были перенесены c Outlook
+      </p>
+    </div>
+    <div class="image__wrapper" id="detail">
+      <img class="img_big" src="../img/thunderbird/copy_sdb.png">
+    </div>
+
+
+    
+    <!-- <div class="preloader"> 
+        <svg viewBox="0 0 24 24" class="preloader__image" role="img">
+          <path d="M 22.49772,12.000001 A 10.49772,10.497721 0 0 1 12,22.497722 10.49772,10.497721 0 0 1 1.5022797,12.000001 10.49772,10.497721 0 0 1 12,1.5022797 10.49772,10.497721 0 0 1 22.49772,12.000001 Z" fill="none" stroke-linecap="round"></path>
+        </svg>
+        <div class="loadpreloader">
+          <p>
+            Загрузка страницы...
+          </p>
+        </div>
+    </div> -->
+    <a id="hide" title="Убрать все изображения" onclick="hideImageButton()"></a>
+    <a id="show" title="Открыть все изображения" onclick="showImageButton()"></a>
+    <script src='../lib/clipboard.min.js'></script>
+    <script src='../lib/jquery.min.js'></script>
+    <script src="../lib/script/script.js"></script>
+</body>
+</html>
