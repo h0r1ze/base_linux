@@ -14,9 +14,13 @@
       powered by @heavyname
     </p>
     <p id="navigation_title">
-      Название
+      Навигация по странице
     </p>
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#FileBase">- Файл данных Outlook</a>
+    <a href="#addfilebase">- Добавление файла данных в Outlook</a>
+    <a href="#importthunderbird">- Импорт из Outlook в Thunderbird</a>
+    <a href="#korbase">- Корневая папка для добавления файлов</a>
   </div>
     <div id="mySidenavRight" class="sidenavRight">
       <p id="navigation_titleRight">
@@ -24,6 +28,8 @@
       </p>
       <a href="javascript:void(0)" class="closebtnRight" onclick="closeNavRight()">×</a>
       <a href="../distr/" class="baselink">- Дистрибутивы</a>
+      <br>
+      <a href="./redos.html" class="baselink">- RedOS установка</a>
       <a href="./dnf.html" class="baselink">- Преднастройка dnf.conf</a>
       <a href="../index.html" class="baselink">- Kaspersky | VipNet Client | CryptoPro CSP 4.0 | CryptoPro CSP 5.0</a>
       <a href="printers.html" class="baselink">- Принтеры | Сканеры</a>
@@ -66,7 +72,7 @@
           Для переноса необходимо установить Thunderbird на машину где установлен Outlook выше 2010 версии. Если на машине стоит MS Office 2010 года, можно удалить 2010 и установить 2016 года MS Office, либо скопировать файл данных на ПК и начать перенос уже на рабочей версии MS Office 2016
         </p>
     </div> 
-    <div class="content" id="crypto">
+    <div class="content" id="FileBase">
       <h2>Файл данных Outlook</h2>
     </div>
     <div class="image__wrapper" id="detail">
@@ -79,21 +85,19 @@
     <div class="image__wrapper" id="detail">
       <img src="../img/thunderbird/нашли_бд.jpg">
     </div> 
-    <div class="content">
-      <h1>Перенос данных в Thunderbird если имеется скопированный файл данных с другого ПК.</h1>
+    <div class="content" id="addfilebase">
+      <h1>Добавление файла данных в Outlook</h1>
     </div>
     <div class="description_div">
       <p class="description_p">
-        Авторизуемся в Outlook -> Заходим по тому же пути где сгенерировался новый файл данных -> Переносим старый файл данных пользователя -> добавляем к нашим файлам данных как показано на скриншоте ниже
+        Авторизуемся под учеткой пользователя(или любой другой, для нас главное чтобы мы подцепили файл данных) в Outlook -> Заходим по тому же пути где сгенерировался новый файл данных -> Переносим старый файл данных пользователя -> добавляем наш файл данных к остальным, как показано на скриншоте ниже
       </p>
     </div>
     <div class="image__wrapper" id="detail">
       <img src="../img/thunderbird/add_file_date.png">
     </div>
-    <div class="description_div">
-      <p class="description_p">
-        Переходим в Thunderbird и начинаем импорт из Outlook
-      </p>
+    <div class="content" id="importthunderbird">
+      <h1> Импорт из Outlook в Thunderbird</h1>
     </div>
     <div class="image__wrapper" id="detail">
       <img src="../img/thunderbird/import_outlook (3).png">
@@ -131,7 +135,7 @@
       <img class="img_big" src="../img/thunderbird/perenos_var2.jpg">
     </div>
     <div class="description_div">
-      <p class="description_p">
+      <p class="description_p" id="korbase">
         Путь к корневым файлам Thunderbird можно найти в параметрах учетной записи
       </p>
     </div>
@@ -140,7 +144,7 @@
     </div>
     <div class="description_div">
       <p class="description_p">
-        Необходимо в корневой папке создать папку АРХИВ.sdb и перенести все файлы которые были перенесены c Outlook
+        Необходимо в корневой папке создать папку АРХИВ.sdb и перенести все файлы которые были перенесены из Outlook'а
       </p>
     </div>
     <div class="image__wrapper" id="detail">

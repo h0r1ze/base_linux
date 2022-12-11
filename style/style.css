@@ -39,7 +39,7 @@ body{
 
 .background{
   border-radius: 6px;
-  margin: 50px 0px;
+  /* margin: 50px 0px; */
   box-shadow: 0 0 18px 0px #00000040;
   padding: 27px;
   background-color: white;
