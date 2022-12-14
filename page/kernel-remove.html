@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>base</title>
+    <link rel="icon" type="image/x-icon" href="../img/icon/favicon.png">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+  <div id="mySidenav" class="sidenav">
+    <p id="powered">
+      powered by @heavyname
+    </p>
+    <p id="navigation_title">
+        Навигация по странице
+        <br>Обновление ядра / удаление старых ядер
+    </p>
+    <a href="#updatekernel">Установка новой версии ядра 5.15 в РедОС 7.3</a>
+    <a href="#removeoldkernel">Удаление старых ядер</a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  </div>
+    <div id="mySidenavRight" class="sidenavRight">
+      <p id="navigation_titleRight">
+        База знаний
+      </p>
+      <a href="javascript:void(0)" class="closebtnRight" onclick="closeNavRight()">×</a>
+      <a href="../distr/" class="baselink">- Дистрибутивы</a>
+      <br>
+      <a href="./redos.html" class="baselink">- RedOS установка/обновление</a>
+      <a href="#" class="baselink">- Обновление ядра / удаление старых ядер</a>
+      <a href="./dnf.html" class="baselink">- Преднастройка dnf.conf</a>
+      <a href="../index.html" class="baselink">- Kaspersky | VipNet Client | CryptoPro CSP 4.0 | CryptoPro CSP 5.0</a>
+      <a href="printers.html" class="baselink">- Принтеры/Сканеры</a>
+      <a href="./thunderbird.html" class="baselink">- Перенос c Outlook в Thunderbird</a>
+    </div>
+    <div id="nav_div">
+      <label onclick="openNav()">
+        <div class="btn-menu" title="Открыть меню навигации">
+          <i></i>
+        </div>
+      </label>
+    </div>
+    <div id="nav_div">
+      <label onclick="openNav()">
+        <div class="btn-menu" title="Открыть меню навигации">
+          <i></i>
+        </div>
+      </label>
+    </div>
+    <div id="nav_divRight">
+      <label onclick="openNavRight()">
+        <div class="btn-menuRight" title="Открыть меню навигации">
+          <i></i>
+        </div>
+      </label>
+    </div>
+    <div id="nav_divRight">
+      <label onclick="openNavRight()">
+        <div class="btn-menuRight" title="Открыть меню навигации">
+          <i></i>
+        </div>
+      </label>
+    </div>
+    <div class="background">   
+        <div class="content" id="updatekernel">
+            <h1>Установка новой версии ядра 5.15 в РедОС 7.3</h1>
+        </div>
+        <div class="description_div" id="kaspersky_11">
+            <p class="description_p">
+            Перед установкой новой версии ядра обновите систему, выполнив в терминале команду:
+            </p>
+        </div>
+        <div class="div-align">
+            <p class="js-copy-text">dnf update -y</p>
+            <button class="js-copy-btn" title="Копировать">Copy</button>
+        </div>
+        <div class="description_div" id="kaspersky_11">
+            <p class="description_p">
+            После окончания процесса обновления пакетов операционной системы установите пакет для подключения раздела репозитория kernels:
+            </p>
+        </div>
+        <div class="div-align">
+            <p class="js-copy-text">dnf install redos-kernels-release -y</p>
+            <button class="js-copy-btn" title="Копировать">Copy</button>
+        </div>
+        <div class="description_div" id="kaspersky_11">
+            <p class="description_p">
+                Затем выполните команду для обновления кэша пакетов:
+            </p>
+        </div>
+        <div class="div-align">
+            <p class="js-copy-text">dnf makecache</p>
+            <button class="js-copy-btn" title="Копировать">Copy</button>
+        </div>
+        <div class="description_div" id="kaspersky_11">
+            <p class="description_p">
+            Выполните команду для обновления ядра и ядрозависимых пакетов:
+            </p>
+        </div>
+        <div class="div-align">
+            <p class="js-copy-text">dnf update -y</p>
+            <button class="js-copy-btn" title="Копировать">Copy</button>
+        </div>
+        <div class="description_div" id="kaspersky_11">
+            <p class="description_p">
+            После этого перезагрузите ПК:
+            </p>
+        </div>
+        <div class="div-align">
+            <p class="js-copy-text">reboot</p>
+            <button class="js-copy-btn" title="Копировать">Copy</button>
+        </div>
+        <div class="content" id="removeoldkernel">
+            <h1>Удаление старых ядер</h1>
+        </div>
+        <div class="description_div" id="kaspersky_11">
+            <p class="description_p">
+                Для того чтобы посмотреть установленные в системе пакеты ядра, можно воспользоваться консольной командой:
+            </p>
+        </div>
+        <div class="div-align">
+            <p class="js-copy-text">rpm -qa kernel-*</p>
+            <button class="js-copy-btn" title="Копировать">Copy</button>
+        </div>
+        <div class="description_div" id="kaspersky_11">
+            <p class="description_p">
+                Удаляем ядра
+            </p>
+        </div>
+        <div class="div-align">
+            <p class="js-copy-text">dnf remove kernel-lt-5.10* -y</p>
+            <button class="js-copy-btn" title="Копировать">Copy</button>
+        </div>
+
+    <!-- <div class="preloader"> 
+        <svg viewBox="0 0 24 24" class="preloader__image" role="img">
+          <path d="M 22.49772,12.000001 A 10.49772,10.497721 0 0 1 12,22.497722 10.49772,10.497721 0 0 1 1.5022797,12.000001 10.49772,10.497721 0 0 1 12,1.5022797 10.49772,10.497721 0 0 1 22.49772,12.000001 Z" fill="none" stroke-linecap="round"></path>
+        </svg>
+        <div class="loadpreloader">
+          <p>
+            Загрузка страницы...
+          </p>
+        </div>
+    </div> -->
+    </div>
+    <a id="hide" title="Убрать все изображения" onclick="hideImageButton()"></a>
+    <a id="show" title="Открыть все изображения" onclick="showImageButton()"></a>
+    <script src='../lib/clipboard.min.js'></script>
+    <script src='../lib/jquery.min.js'></script>
+    <script src="../lib/script/script.js"></script>
+</body>
+</html>
