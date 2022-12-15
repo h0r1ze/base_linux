@@ -197,6 +197,33 @@
         <div class="image__wrapper" id="detail">
           <img class="img_big" src="../img/repo/repo_redos.png">
         </div> 
+        <div class="content" id="chooserepo">
+          <h1>Включение старых протоколов SMB1</h1>
+        </div>
+        <div class="description_div" id="kaspersky_11">
+          <p class="description_p">
+            Необходимо подредактировать smb.conf
+          </p>
+        </div>
+        <div class="div-align">
+          <p class="js-copy-text">nano /etc/samba/smb.conf</p>
+          <button class="js-copy-btn" title="Копировать">Copy</button>
+        </div>
+        <div class="description_div" id="kaspersky_11">
+          <p class="description_p">
+            Копируем и вставляем как показано на скриншоте
+          </p>
+        </div>
+        <div class="div-align">
+          <p class="js-copy-text" style="padding: 18px 8px 18px 14px;">
+            client min protocol = NT1 <br>
+            client max protocol = SMB3
+          </p>
+          <button class="js-copy-btn" title="Копировать">Copy</button>
+      </div>
+        <div class="image__wrapper" id="detail">
+            <img class="img_big" src="../img/redos/samba/smbnt1smb3.png">
+        </div> 
     <!-- <div class="preloader"> 
         <svg viewBox="0 0 24 24" class="preloader__image" role="img">
           <path d="M 22.49772,12.000001 A 10.49772,10.497721 0 0 1 12,22.497722 10.49772,10.497721 0 0 1 1.5022797,12.000001 10.49772,10.497721 0 0 1 12,1.5022797 10.49772,10.497721 0 0 1 22.49772,12.000001 Z" fill="none" stroke-linecap="round"></path>
