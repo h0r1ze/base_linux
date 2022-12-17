@@ -1,3 +1,5 @@
+#!/bin/bash
+clear
 dnf install -y dist/vipnetclient-gui_*.rpm
 chmod +x dist/vipnet_dns.sh
 echo "[global]

@@ -1,12 +1,5 @@
 #!/bin/bash
-echo -n "
-Настройка dnf.conf
-
-Введите логин прокси: "
-read userNameProxy
-echo -n "Введите пароль прокси: "
-read userPasswordProxy
-
+clear
 echo "[main]
 gpgcheck=1
 installonly_limit=3
