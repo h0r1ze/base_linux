@@ -1,3 +1,3 @@
 #!/bin/bash
-cp distr/шрифты/* /usr/share/fonts/
+cp dist/шрифты/* /usr/share/fonts/
 echo "Шрифты успешно установлены"

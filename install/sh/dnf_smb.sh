@@ -18,7 +18,7 @@ proxy_username=$userNameProxy
 proxy_password=$userPasswordProxy" > /etc/dnf/dnf.conf
 echo "
 dnf.conf успешно изменен"
-cp distr/proxy/smb.conf /etc/samba/
-echo "smb.conf успешно изменен
+#cp dist/proxy/smb.conf /etc/samba/
+#echo "smb.conf успешно изменен
 
-Скрипт успешно завершил работу"
+#Скрипт успешно завершил работу"

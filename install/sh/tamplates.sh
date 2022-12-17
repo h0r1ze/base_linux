@@ -5,5 +5,5 @@ echo -n "         -- Установка шаблонов --
 grep -E '1000' /etc/passwd | awk -F: '{print $1}'
 echo -n "Ввод: "
 read userName
-sudo -u $userName cp distr/шаблоны/* /home/$userName/Шаблоны
+sudo -u $userName cp dist/шаблоны/* /home/$userName/Шаблоны
 echo "Шаблоны успешно установлены"

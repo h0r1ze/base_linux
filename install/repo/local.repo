@@ -1,0 +1,17 @@
+[base7.3c]
+name=RedOS - Base 7.3c
+baseurl=http://10.82.102.251/repo/redos/7.3c/x86_64/os/
+enabled=1
+gpgcheck=0
+
+[updates7.3c]
+name=RedOS - Updates 7.3c
+baseurl=http://10.82.102.251/repo/redos/7.3c/x86_64/updates/
+enabled=1
+gpgcheck=0
+
+[kernels7.3c]
+name=RedOS - Kernels 7.3c
+baseurl=http://10.82.102.251/repo/redos/7.3c/x86_64/kernels/
+enabled=1
+gpgcheck=0
