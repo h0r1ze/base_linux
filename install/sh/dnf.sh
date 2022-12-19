@@ -7,7 +7,6 @@ echo -n "
 read userNameProxy
 echo -n "Введите пароль прокси: "
 read userPasswordProxy
-
 echo "[main]
 gpgcheck=1
 installonly_limit=3
