@@ -6,9 +6,9 @@ _____________________________________
             Обновление
 _____________________________________
 
-1) Обновление (Цитадель)
+1) Обновление (Цитадель без перезагрузки)
 2) Обновление (Цитадель + reboot)
-3) Обновление (С настройкой dnf.conf)
+3) Обновление (С настройкой dnf.conf без перезагрузки)
 4) Обновление (dnf.conf + reboot)
 _____________________________________
 
@@ -17,10 +17,14 @@ _____________________________________
 Введите одно допустимое значение: "
 read getnum
 case $getnum in
-    1) ./sh/repo_one.sh;;
-    2) ./sh/repo_one_nonreboot;;
-    3) ./sh/repo_one_defupdate.sh;;
-    4) ./sh/repo_one_defupdate_nonreboot.sh;;
+    1) ./sh/time_disable.sh
+       ./sh/repo_one.sh;;
+    2) ./sh/time_disable.sh
+       ./sh/repo_one_nonreboot.sh;;
+    3) ./sh/time_disable.sh
+       ./sh/repo_one_defupdate.sh;;
+    4) ./sh/time_disable.sh 
+       ./sh/repo_one_defupdate_nonreboot.sh;;
     0) ./install.sh;;
 esac
 

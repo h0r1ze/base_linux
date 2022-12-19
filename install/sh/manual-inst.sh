@@ -10,15 +10,14 @@ __________________________________________
 __________________________________________
 
 1) Kaspersky (инсталляция)
-2) VipNet (инсталляция)
-3) NetAgent (инсталляция)
-4) Kaspersky (инсталляция + автонастройка)
-5) VipNet (инсталляция + автонастройка)
+2) NetAgent (инсталляция)
+3) Kaspersky (инсталляция + автонастройка)
+4) VipNet (инсталляция + автонастройка)
 __________________________________________
 
-6) Проверить dnf.conf
-7) Настроить dnf.conf
-8) Очистить прокси в dnf.conf
+5) Проверить dnf.conf
+6) Настроить dnf.conf
+7) Очистить прокси в dnf.conf
 
 \e[1m\e[31mПрежде чем устанавливать убедитесь что
 у вас соединение идет через прокси и
@@ -31,11 +30,32 @@ ______________________________________
 Введите одно допустимое значение: "
 read getnum
 case $getnum in
-    1) ./sh/update-install.sh;;
-    2) ./sh/auto-install.sh ;;
-    3) ./sh/manula-inst.sh;;
-    4) ./sh/settings-larm.sh;;
-    5) ./sh/settings-larm.sh;;
+    1) ./sh/kaspersky.sh;;
+    2) ./sh/kasper_without_agent.sh;;
+    3) ./sh/kaspersky;;
+    4) ./sh/vipnet.sh;;
+    5) clear
+       echo
+       echo
+       echo
+       echo "        -- dnf.conf --"
+       echo "_______________________________"
+       tail -n 3 /etc/dnf/dnf.conf | grep proxy
+       echo "_______________________________"
+       echo
+       echo "Если прокси не настроен значений последний 3 строк не будет выведено!"
+       echo "________________________________________________"
+       echo
+       echo -n "Введите любое значение чтобы попасть назад: "
+       read sabre
+       if [ $sabre = y ] || [ $sabre = Y ]
+       then
+        ./sh/manual-inst.sh
+       else
+        ./sh/manual-inst.sh
+       fi;;
+    6) ./sh/dnf.sh;;
+    7) ./sh/default_dnf.sh;;
     9) ./sh/manual-inst2.sh;;
     0) ./install.sh;;
 esac

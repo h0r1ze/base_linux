@@ -35,14 +35,16 @@ read getnum
 case $getnum in
     1)  ./sh/fonts.sh
         ./sh/tamplates.sh
+        ./sh/assistan.sh
         ./sh/browser.sh
         ./sh/office.sh
         dnf install -y gnome-disk-utility
         ./sh/vipnet.sh
         ./sh/kaspersky.sh
         dnf update -y;;
-    2) ./sh/fonts.sh
+    2)  ./sh/fonts.sh
         ./sh/tamplates.sh
+        ./sh/assistan.sh
         ./sh/browser.sh
         dnf install -y gnome-disk-utility
         ./sh/vipnet.sh
@@ -50,6 +52,7 @@ case $getnum in
         dnf update -y;;
     3) ./sh/fonts.sh
         ./sh/tamplates.sh
+        ./sh/assistan.sh
         ./sh/browser.sh
         dnf install -y gnome-disk-utility
         ./sh/vipnet.sh

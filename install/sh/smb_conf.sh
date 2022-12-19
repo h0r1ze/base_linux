@@ -23,12 +23,12 @@ __________________________________________________________________
 
 __________________________________________________________________
 
-Вы уверены что все прочитали и хотите продолжить? (да / нет): "
+Вы уверены что все прочитали и хотите продолжить? (Y/N): "
 echo 'client min protocol = NT1 
 client max protocol = SMB3'| xsel -b -i
 
 read questUser
-if [ $questUser = "да" ] || [ $questUser = "Да" ] || [ $questUser = "дА" ]; then
+if [ $questUser = "Y" ] || [ $questUser = "y" ]; then
     nano /etc/samba/smb.conf
     systemctl start smb
     clear
