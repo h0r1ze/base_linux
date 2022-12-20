@@ -3,9 +3,9 @@ clear
 ./sh/dnf.sh
 dnf update -y
 echo -n "
-Перезагрузить ПК?(да/нет): "
+Перезагрузить ПК?(Y/N): "
 read askReboot
-if [ $askReboot = "да" ]
+if [ $askReboot = "Y" ] || [ $askReboot = "y" ]
 then
     reboot
 else 
