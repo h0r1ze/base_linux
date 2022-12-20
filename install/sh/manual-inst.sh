@@ -32,7 +32,7 @@ read getnum
 case $getnum in
     1) ./sh/kaspersky.sh;;
     2) ./sh/kasper_without_agent.sh;;
-    3) ./sh/kaspersky;;
+    3) ./sh/kaspersky.sh;;
     4) ./sh/vipnet.sh;;
     5) clear
        echo

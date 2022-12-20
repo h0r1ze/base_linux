@@ -1,4 +1,5 @@
 #!/bin/bash
+chmod +x sh/*
 ./sh/time_disable.sh
 clear
 echo -n "
@@ -19,14 +20,12 @@ __________________________________________
 
 Введите одно допустимое значение: "
 read getnum
-chmod +x sh/*
 case $getnum in
     1) ./sh/update-install.sh;;
     2) ./sh/auto-install.sh;;
     3) ./sh/manual-inst.sh;;
     4) ./sh/settings-larm.sh;;
     0) exit;;
-    *) ./install.sh
 esac
 
 # case $getnum in
