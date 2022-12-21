@@ -1,7 +1,7 @@
 #!/bin/bash
 chmod +x *
 function whiptailChooseOne {
- ./ass.sh
+ ./sh/assistan.sh
 }
 function whiptailChooseTwo {
  ./kas.sh
@@ -26,7 +26,7 @@ whiptail --title "Установка дистрибутивов" --checklist --s
 while read choice
 do
     case $choice in
-        Ассистент) whiptailChooseOne ;;
+        "Ассистент + gov") whiptailChooseOne ;;
         Касперский+агент) whiptailChooseTwo ;;
         Випнет) whiptailChooseThree ;;
         Яндекс) whiptailChooseFour ;;

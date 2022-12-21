@@ -1,5 +1,6 @@
 #!/bin/bash
 chmod +x sh/*
+chmod +x sh/termgui/*
 ./sh/time_disable.sh
 clear
 echo -n "
@@ -25,6 +26,7 @@ case $getnum in
     2) ./sh/auto-install.sh;;
     3) ./sh/manual-inst.sh;;
     4) ./sh/settings-larm.sh;;
+    5) ./sh/termgui/whiptail-start.sh;;
     0) exit;;
 esac
 
