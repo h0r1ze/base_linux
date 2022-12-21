@@ -89,4 +89,3 @@ case $getnum in
     8) ./sh/default_dnf.sh;;
     0) ./install.sh;;
 esac
-./sh/auto-install.sh
