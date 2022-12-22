@@ -6,6 +6,7 @@ __________________________________________________________
                         Обновление
 __________________________________________________________
 
+1) Обычное обновление без настроек
 1) Обновление в Цитадели без перезагрузки
 2) Обновление в Цитадели с перезагрузкой
 3) Обновление (С настройкой dnf.conf без перезагрузки)
@@ -22,12 +23,12 @@ __________________________________________________________
 Введите одно допустимое значение: "
 read getnum
 case $getnum in
-    1) dnf update -y 
-    1) ./sh/repo_one_nonreboot.sh;;
-    2) ./sh/repo_one.sh;;
-    3) ./sh/repo_one_defupdate.sh;;
-    4) ./sh/repo_one_defupdate_nonreboot.sh;;
-    0) ./install.sh;;
+    1) dnf update -y ;;
+    1) ./sh/repo_one_nonreboot.sh ;;
+    2) ./sh/repo_one.sh ;;
+    3) ./sh/repo_one_defupdate.sh ;;
+    4) ./sh/repo_one_defupdate_nonreboot.sh ;;
+    0) ./install.sh ;;
     *) echo "Скрипт завершен"
 esac
 

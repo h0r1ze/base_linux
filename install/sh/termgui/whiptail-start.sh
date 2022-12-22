@@ -1,16 +1,31 @@
 #!/bin/bash
 chmod +x *
 function whiptailChooseOne {
- ./sh/assistan.sh
+ ./sh/kaspersky.sh
 }
 function whiptailChooseTwo {
- ./kas.sh
+ ./agent.sh
 }
 function whiptailChooseThree {
- ./vip.sh
+ ./vipnet.sh
 }
 function whiptailChooseFour {
- ./ya.sh
+ ./crypto-pro-5-0.sh
+}
+function whiptailChooseFive {
+ ./sh/office.sh
+}
+function whiptailChooseSix {
+ ./assistan.sh
+}
+function whiptailChooseSeven {
+ ./yandex-browser.sh
+}
+function whiptailChooseEight {
+ ./google-chrome.sh
+}
+function whiptailChooseNine {
+ ./gnom-disk.sh
 }
 
 whiptail --title "Установка дистрибутивов" --checklist --separate-output "
@@ -18,18 +33,28 @@ whiptail --title "Установка дистрибутивов" --checklist --s
 
 Выбор осуществляется нажатием на пробел:
 " 22 32 10 \
-"Ассистент" "" off \
-"Касперский+агент" "" off \
+"Касперский" "" off \
+"Агент" "" off \
 "Випнет" "" off \
-"Яндекс" "" off 2>3
+"CSP CryptoPro 5.0" "" off \
+"Р7 Офис" "" off \
+"Ассистент" ""
+"Яндекс браузер" "" off \
+"Google Chrome" "" off \
+"Гном Диск" "" off 2>3
 
 while read choice
 do
     case $choice in
-        "Ассистент + gov") whiptailChooseOne ;;
-        Касперский+агент) whiptailChooseTwo ;;
-        Випнет) whiptailChooseThree ;;
-        Яндекс) whiptailChooseFour ;;
+        "Касперский") whiptailChooseOne;;
+        "Агент") whiptailChooseTwo;;
+        "Випнет") whiptailChooseThree;;
+        "CSP CryptoPro 5.0") whiptailChooseFour;;
+        "Р7 Офис") whiptailChooseFive;;
+        "Ассистент") whiptailChooseSix;;
+        "Яндекс браузер") whiptailChooseSeven;;
+        "Google Chrome") whiptailChooseEight;;
+        "Гном Диск") whiptailChooseNine;;
     esac
 done < 3
 rm 3
